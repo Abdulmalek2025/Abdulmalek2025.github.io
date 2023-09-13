@@ -1,0 +1,292 @@
+/*Global Font*/
+@font-face {
+    font-family: 'Droid-kufi';
+    src: url('fonts/DroidArabicKufi.eot');
+    src: url('fonts/DroidArabicKufi.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidArabicKufi.woff2') format('woff2'),
+         url('fonts/DroidArabicKufi.woff') format('woff'),
+         url('fonts/DroidArabicKufi.ttf') format('truetype'),
+         url('fonts/DroidArabicKufi.svg#DroidArabicKufi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/*Fonts*/
+@font-face {
+    font-family: 'Droid-naskh';
+    src: url('fonts/DroidNaskhRegular.eot');
+    src: url('fonts/DroidNaskhRegular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidNaskhRegular.woff2') format('woff2'),
+         url('fonts/DroidNaskhRegular.woff') format('woff'),
+         url('fonts/DroidNaskhRegular.ttf') format('truetype'),
+         url('fonts/DroidNaskhRegular.svg#DroidNaskhRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-naskh {
+    font-family: 'Droid-naskh' !important;
+}
+
+@font-face {
+    font-family: 'almushaf';
+    src: url('fonts/almushaf.eot');
+    src: url('fonts/almushaf.eot?#iefix') format('embedded-opentype'),
+         url('fonts/almushaf.woff2') format('woff2'),
+         url('fonts/almushaf.woff') format('woff'),
+         url('fonts/almushaf.ttf') format('truetype'),
+         url('fonts/almushaf.svg#almushaf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-almushaf {
+    font-family: 'almushaf' !important;
+}
+
+@font-face {
+    font-family: 'kufi';
+    src: url('fonts/kufi.eot');
+    src: url('fonts/kufi.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kufi.woff2') format('woff2'),
+         url('fonts/kufi.woff') format('woff'),
+         url('fonts/kufi.ttf') format('truetype'),
+         url('fonts/kufi.svg#kufi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-kufi {
+    font-family: 'kufi' !important;
+}
+
+@font-face {
+    font-family: 'kufi-2';
+    src: url('fonts/kufi-2.eot');
+    src: url('fonts/kufi-2.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kufi-2.woff2') format('woff2'),
+         url('fonts/kufi-2.woff') format('woff'),
+         url('fonts/kufi-2.ttf') format('truetype'),
+         url('fonts/kufi-2.svg#kufi-2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-kufi-2 {
+    font-family: 'kufi-2' !important;
+}
+
+@font-face {
+    font-family: 'hakm';
+    src: url('fonts/hakm.eot');
+    src: url('fonts/hakm.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hakm.woff2') format('woff2'),
+         url('fonts/hakm.woff') format('woff'),
+         url('fonts/hakm.ttf') format('truetype'),
+         url('fonts/hakm.svg#hakm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-hakm {
+    font-family: 'hakm' !important;
+}
+
+@font-face {
+    font-family: 'hakm-thin';
+    src: url('fonts/hakm-thin.eot');
+    src: url('fonts/hakm-thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hakm-thin.woff2') format('woff2'),
+         url('fonts/hakm-thin.woff') format('woff'),
+         url('fonts/hakm-thin.ttf') format('truetype'),
+         url('fonts/hakm-thin.svg#hakm-thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-hakm-thin {
+    font-family: 'hakm-thin' !important;
+}
+
+@font-face {
+    font-family: 'hakm-bold';
+    src: url('fonts/hakm-bold.eot');
+    src: url('fonts/hakm-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hakm-bold.woff2') format('woff2'),
+         url('fonts/hakm-bold.woff') format('woff'),
+         url('fonts/hakm-bold.ttf') format('truetype'),
+         url('fonts/hakm-bold.svg#hakm-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-hakm-bold {
+    font-family: 'hakm-bold' !important;
+}
+
+@font-face {
+    font-family: 'zahra';
+    src: url('fonts/zahra.eot');
+    src: url('fonts/zahra.eot?#iefix') format('embedded-opentype'),
+         url('fonts/zahra.woff2') format('woff2'),
+         url('fonts/zahra.woff') format('woff'),
+         url('fonts/zahra.ttf') format('truetype'),
+         url('fonts/zahra.svg#zahra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-zahra {
+    font-family: 'zahra' !important;
+}
+
+@font-face {
+    font-family: 'sabgha';
+    src: url('fonts/sabgha.eot');
+    src: url('fonts/sabgha.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sabgha.woff2') format('woff2'),
+         url('fonts/sabgha.woff') format('woff'),
+         url('fonts/sabgha.ttf') format('truetype'),
+         url('fonts/sabgha.svg#sabgha') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-sabgha {
+    font-family: 'sabgha' !important;
+}
+
+@font-face {
+    font-family: 'DecoType-Thuluth';
+    src: url('fonts/DecoType-Thuluth.eot');
+    src: url('fonts/DecoType-Thuluth.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DecoType-Thuluth.woff2') format('woff2'),
+         url('fonts/DecoType-Thuluth.woff') format('woff'),
+         url('fonts/DecoType-Thuluth.ttf') format('truetype'),
+         url('fonts/DecoType-Thuluth.svg#DecoType-Thuluth') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-DecoType-Thuluth {
+    font-family: 'DecoType-Thuluth' !important;
+}
+
+@font-face {
+    font-family: 'thuluth-decorated';
+    src: url('fonts/thuluth-decorated.eot');
+    src: url('fonts/thuluth-decorated.eot?#iefix') format('embedded-opentype'),
+         url('fonts/thuluth-decorated.woff2') format('woff2'),
+         url('fonts/thuluth-decorated.woff') format('woff'),
+         url('fonts/thuluth-decorated.ttf') format('truetype'),
+         url('fonts/thuluth-decorated.svg#thuluth-decorated') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-thuluth-decorated {
+    font-family: 'thuluth-decorated' !important;
+}
+
+@font-face {
+    font-family: 'b-hamid';
+    src: url('fonts/b-hamid.eot');
+    src: url('fonts/b-hamid.eot?#iefix') format('embedded-opentype'),
+         url('fonts/b-hamid.woff2') format('woff2'),
+         url('fonts/b-hamid.woff') format('woff'),
+         url('fonts/b-hamid.ttf') format('truetype'),
+         url('fonts/b-hamid.svg#b-hamid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-b-hamid {
+    font-family: 'b-hamid' !important;
+}
+
+@font-face {
+    font-family: 'shams';
+    src: url('fonts/shams.eot');
+    src: url('fonts/shams.eot?#iefix') format('embedded-opentype'),
+         url('fonts/shams.woff2') format('woff2'),
+         url('fonts/shams.woff') format('woff'),
+         url('fonts/shams.ttf') format('truetype'),
+         url('fonts/shams.svg#shams') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.font-shams {
+    font-family: 'shams' !important;
+}
+
+/*Mohammed Style*/
+textarea:focus {
+  outline: none !important;
+}
+.container-of-canvas {
+  overflow-y: scroll; 
+  max-height: 460px; 
+  position: relative;
+}
+#fontColorWrap {
+  /*width: 38px; 
+  height: 38px;*/
+  margin-left: 5px;
+  background: #000000;
+}
+#shapesColorWrap {
+  width: 38px; 
+  height: 38px;
+}
+#fonts-control-wrap, #shapes-control-wrap {
+  position: relative;
+  z-index: 99;
+}
+#font-name-btn.active {
+  background: #293039;
+  color: #FFFFFF !important;
+}
+#filter-wrap-btn.active, #text-wrap-btn.active {
+  background: #b4b4b5;
+}
+.fontsItem button:hover, .fontsItem button.active {
+  background: #0E131833;
+}
+.fontsItem .font-badge {
+  display: none;
+}
+.fontsItem button.active .font-badge {
+  display: block !important;
+}
+.filter-options-wrap, .text-options-wrap {
+  display: none;
+}
+#eqtibas-wrapper .spinner {
+  display: none;
+  position: absolute !important;
+  top: 40%;
+  right: 45%;
+}
+.aside-nav ul.nav {
+  z-index: 9999;
+  position: relative;
+}
+
+/*#kt_footer {
+  position: fixed !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+}*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container-of-canvas {
+    max-height: 860px !important; 
+    padding-top: 25px !important;
+  }
+  #fonts-control-wrap, #shapes-control-wrap {
+    margin: 5px 65px 0 0;
+  }
+  #card-font-size-wrap {
+    width: 150px !important;
+  }
+  .col-12 .symbol, .image-input {
+    margin-right: 25px !important;
+  }
+  #kt_footer {
+    border-top: #29303911 1px solid !important;
+  }
+  .global-controls-wrapper .btn {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
