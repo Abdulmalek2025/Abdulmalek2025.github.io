@@ -28,7 +28,7 @@
 		<link rel="stylesheet" href="assets/css/owl.theme.default.css">
 		<!--end::Layout Themes-->
 		<link rel="icon" type="image/png" href="assets/media/logos/favicon.png" />
-
+<meta name="pwa-capable" content="yes">
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -4704,6 +4704,16 @@
 		<script src="assets/js/owl.carousel.min.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script src="assets/js/pwa-handler.js"></script>
+		<script>
+    // PWA
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        '/service-worker.js', {
+          scope: '/'
+        }
+      )
+    }
+  </script>
 
 	</body>
 	<!--end::Body-->
