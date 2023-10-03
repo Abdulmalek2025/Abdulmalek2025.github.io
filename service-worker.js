@@ -1,39 +1,57 @@
-/ Name of the Cache.
-const CACHE = "cacheV1";
+const GHPATH = 'https://abdulmalek2025.github.io/';
+// Change to a different app prefix name
+const APP_PREFIX = 'my_awesome_';
+const VERSION = 'version_01';
 
-// Select files for caching.
-let urlsToCache = [
-    "/",
-    "/index.html",
-    "/assets",
-    "/assets/media",
-    "/components/images/favicon.png", 
-    "/components/images/clock-face.png",
-    "/assets/js",
-    "/assets/js/main.js", 
-    "/assets/js/pwa-handler.js",
-    "/assets/styles",
-    "/assets/styles/main.css"
-];
+// The files to make available for offline use. make sure to add 
+// others to this list
+const URLS = [
+  `${GHPATH}/`,
+  `${GHPATH}/index.html`,
+    `${GHPATH}/assets/css/style.css`,
+    `${GHPATH}/assets/js/script.js`,
+  // add more paths if you need
+  // `${GHPATH}/js/app.js`
+]
 
-// Cache all the selected items once application is installed.
-self.addEventListener("install", (event) => {
-    event.waitUntil(
-        caches.open(CACHE).then((cache) => {
-            console.log("Caching started.");
-            return cache.addAll(urlsToCache);
-        })
-    );
-});
+const CACHE_NAME = APP_PREFIX + VERSION
+self.addEventListener('fetch', function (e) {
+  console.log('Fetch request : ' + e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function (request) {
+      if (request) {
+        console.log('Responding with cache : ' + e.request.url);
+        return request
+      } else {
+        console.log('File is not cached, fetching : ' + e.request.url);
+        return fetch(e.request)
+      }
+    })
+  )
+})
 
-// Whenever a resource is requested, return if its cached else fetch the resourcefrom server.
-self.addEventListener("fetch", (event) => {
-    event.respondWith(
-        caches.match(event.request).then((response) => {
-            if (response) {
-                return response;
-            }
-            return fetch(event.request);
-        })
-    );
-});
+self.addEventListener('install', function (e) {
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(function (cache) {
+      console.log('Installing cache : ' + CACHE_NAME);
+      return cache.addAll(URLS)
+    })
+  )
+})
+
+self.addEventListener('activate', function (e) {
+  e.waitUntil(
+    caches.keys().then(function (keyList) {
+      var cacheWhitelist = keyList.filter(function (key) {
+        return key.indexOf(APP_PREFIX)
+      })
+      cacheWhitelist.push(CACHE_NAME);
+      return Promise.all(keyList.map(function (key, i) {
+        if (cacheWhitelist.indexOf(key) === -1) {
+          console.log('Deleting cache : ' + keyList[i]);
+          return caches.delete(keyList[i])
+        }
+      }))
+    })
+  )
+})
