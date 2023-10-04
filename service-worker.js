@@ -8,8 +8,10 @@ const VERSION = 'version_01';
 const URLS = [
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
-    `${GHPATH}/assets/css/style.css`,
-    `${GHPATH}/assets/js/script.js`,
+  `${GHPATH}/service-worker.js`,
+  `${GHPATH}/manifest.json`,
+  `${GHPATH}/assets/css/style.css`,
+  `${GHPATH}/assets/js/script.js`,
   // add more paths if you need
   // `${GHPATH}/js/app.js`
 ]
