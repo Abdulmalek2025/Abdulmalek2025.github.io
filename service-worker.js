@@ -55,3 +55,6 @@ self.addEventListener('activate', function (e) {
     })
   )
 })
+self.addEventListener('offline', function(e){
+  console.log('offline noe');
+})
