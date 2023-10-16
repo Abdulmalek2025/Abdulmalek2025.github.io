@@ -8,6 +8,10 @@
     "theme_color": "#000000",
     "description": "Btaqaat Dhad is one of the AlefBa apps.",
     "scope": "https://abdulmalek2025.github.io",
+    "display_override": [
+  "window-controls-overlay",
+  "standalone"
+]
     "lang": "en",
     "icons": [
     {
