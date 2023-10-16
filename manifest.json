@@ -1,11 +1,19 @@
 {
     "name": "بطاقات ضاد",
     "short_name": "بطاقات ضاد",
-    "start_url": "/",
+    "start_url": "https://abdulmalek2025.github.io",
     "display": "standalone",
     "orientation" : "portrait",
     "background_color": "#FFFFFF",
     "theme_color": "#000000",
+    "description": "Btaqaat Dhad is one of the AlefBa apps.",
+    "scope": "https://abdulmalek2025.github.io",
+    "lang": "en",
+    "display_override": [
+      "window-controls-overlay",
+      "standalone",
+      "browser"
+    ],
     "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
@@ -331,7 +339,7 @@
       "src": "android/android-launchericon-512-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
       "src": "android/android-launchericon-192-192.png",
