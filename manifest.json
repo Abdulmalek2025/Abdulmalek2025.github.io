@@ -9,11 +9,6 @@
     "description": "Btaqaat Dhad is one of the AlefBa apps.",
     "scope": "https://abdulmalek2025.github.io",
     "lang": "en",
-    "display_override": [
-      "window-controls-overlay",
-      "standalone",
-      "browser"
-    ],
     "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
