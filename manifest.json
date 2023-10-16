@@ -10,7 +10,6 @@
     "scope": "https://abdulmalek2025.github.io",
     "display_override": [
   "window-controls-overlay",
-  "standalone"
 ]
     "lang": "en",
     "icons": [
